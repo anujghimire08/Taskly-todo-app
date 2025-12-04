@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskly - todo app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="todolist.gif" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="todolist.gif" />
+    </div>
+
+    <div class="input-div">
+      <input id="add-input" placeholder="Enter New Task" required />
+      <input class="input" id="task-time" type="date" required />
+      <button id="add-task" onclick="todo()">Add</button>
+    </div>
+    <div class="tasks-div"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+body {
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.header {
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 10px;
+}
+.header img {
+  width: 80px;
+}
+.input-div {
+  background-color: white;
+  width: 35vw;
+  height: 100px;
+  padding: 0 10px 10px 10px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.input-div.active {
+  border-radius: 0;
+}
+#add-input {
+  padding: 5px;
+  width: 75%;
+  font-size: 15px;
+  border: none;
+  color: black;
+  border-bottom: 2px solid rgb(126, 123, 123);
+}
+#add-input:focus {
+  outline: none;
+  background-color: transparent;
+}
+#task-time {
+  padding: 5px;
+  width: 30%;
+}
+#add-task {
+  padding: 10px;
+  font-size: 15px;
+  width: 20%;
+  background-color: #2fd1d1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.1s ease;
+}
+#add-task:active {
+  transform: scale(0.9);
+}
+.tasks-div {
+  width: 35vw;
+  height: auto;
+  border-radius: 0 0 10px 10px;
+  padding: 0 10px 10px 10px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding-bottom: 1vw;
+}
+.tasks-div.active {
+  display: flex;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+#task-name {
+  display: block;
+  width: 40%;
+  font-size: 18px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  gap: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+i {
+  color: white;
+  font-size: 18px;
+}
+.dlt-btn {
+  background-color: red;
+  margin-right: 10px;
+  transition: transform 0.1s ease;
+}
+
+.dlt-btn:active {
+  transform: scale(0.9);
+}
+@media (max-width: 800px) {
+  .input-div {
+    width: 95vw;
+  }
+  .tasks-div {
+    width: 95vw;
+  }
+  .header {
+    width: 95vw;
+  }
+}
